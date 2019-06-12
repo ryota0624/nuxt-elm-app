@@ -11,7 +11,7 @@ export default {
   },
   data() {
     return {
-      init: About.Main.init,
+      init: About.About.init,
       receivedApp(app) {}
     }
   }

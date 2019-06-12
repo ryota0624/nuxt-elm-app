@@ -1,11 +1,15 @@
+module Header exposing (elementArg, main)
+
 import Browser
 import Html exposing (Html, button, div, text)
 import Html.Events exposing (onClick)
 import Routing as Routing 
 
 main =
-  Browser.element { 
-      init = init, update = update, view = view, subscriptions = always  <| Sub.batch [Routing.listenUrl ReceivedURl ] }
+  Browser.element elementArg
+elementArg = { 
+      init = init, update = update, view = view, subscriptions = always  <| Sub.batch [Routing.listenUrl ReceivedURl ] 
+      }
 
 
 -- MODEL

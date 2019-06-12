@@ -11,7 +11,6 @@
 <script>
 import Elm from '~/components/Elm'
 import { Elm as Header } from '~/components/Header.elm'
-
 export default {
   components: {
     Elm
@@ -19,7 +18,7 @@ export default {
   data() {
     return {
       header: {
-        init: Header.Main.init,
+        init: Header.Header.init,
         receivedApp(app) {},
         flags: this.$router.currentRoute.fullPath
       }

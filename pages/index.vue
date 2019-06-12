@@ -10,7 +10,7 @@ export default {
   },
   data() {
     return {
-      init: Index.Main.init,
+      init: Index.Index.init,
       receivedApp(app) {}
     }
   }
